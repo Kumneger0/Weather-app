@@ -1,0 +1,170 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  height:90vh;
+}
+.inputControl {
+  margin-top: 20px;
+  position: absolute;
+  left: 20%;
+}
+.innerConatiner {
+  display: none;
+  justify-content: center;
+  max-width: 80%;
+  background-color: #dfede9;
+  align-items: center;
+  height: 60vh;
+  margin-top: 100px;
+  position: relative;
+  border-radius: 20px;
+  box-shadow: 10px 10px 5px gray;
+}
+.country {
+  width: 100%;
+
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-weight: bold;
+}
+.Name {
+  width: 100%;
+  position: absolute;
+  top: 50px;
+  left: 10px;
+  font-weight: bold;
+}
+.Condition {
+  position: absolute;
+  top: 90px;
+  left: 10px;
+  font-weight: bold;
+}
+.imgContainer {
+  align-self: center;
+}
+
+.airCondition {
+  margin: 50px;
+  font-weight: normal;
+}
+.tempratureConatiner {
+  position: absolute;
+  top: 50%;
+}
+.temprature_C {
+  margin: 30px;
+}
+.temprature_F {
+  margin: 30px;
+}
+.countryName {
+  font-weight: normal;
+  margin-left: 27%;
+}
+.cityName {
+  font-weight: normal;
+  margin-left: 30%;
+}
+.errorContainer {
+  display: none;
+  justify-content: center;
+  max-width: 80%;
+  background-color: #dfede9;
+  align-items: center;
+  height: 60vh;
+  margin-top: 100px;
+  position: relative;
+  border-radius: 20px;
+  box-shadow: 10px 10px 5px gray;
+}
+.resFromErr {
+  font-style: italic;
+}
+
+.footer {
+  width: 100%;
+  height: 130px;
+  background-color: #8db096;
+  position: absolute;
+  top:100%;
+  margin-top: 30px;
+}
+
+.devsName {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+.devsInfo,
+.myName {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.a {
+  width: 30px;
+  height: 30px;
+}
+
+.tempInfo {
+  display: flex;
+  font-style: italic;
+  margin-top: 200px;
+  margin-left: 50px;
+}
+.loading{
+ display:flex;
+ justify-content:center;
+ max-width:65%;
+ margin-top:150px;
+}
+
+/*loading part */
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+  .innerConatiner {
+    margin-left: 50px;
+  }
+ 
+}
+@media screen and (max-width:416px){
+  #btnSeach{
+    margin-top:5px;
+  }
+   .tempInfo{
+    margin:top:115px;
+  }
+}
