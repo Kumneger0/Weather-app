@@ -1,144 +1,154 @@
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: playfair, roboto, sans-serif;
+}
+.navbar{
+  background-color:#7d672a !important;
 }
 body{
-  height:90vh;
+  background-color:#ba8e14;
+}
+#navbar-brand {
+  width: 100%;
+  text-align: center;
+  color:#fff;
 }
 .inputControl {
-  margin-top: 20px;
-  position: absolute;
-  left: 20%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 3%;
+  animation:inputAnimation 1s;
+}
+#searchBox:focus{
+  outline: none;
+}
+@keyFrames inputAnimation{
+  from{
+    transform: translateX(0);
+  }
+  to{
+    transform: translateX(50%)
+    }
+}
+#btnSearch {
+  width: 50px;
 }
 .innerConatiner {
-  display: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
   justify-content: center;
-  max-width: 80%;
-  background-color: #dfede9;
-  align-items: center;
-  height: 60vh;
-  margin-top: 100px;
   position: relative;
-  border-radius: 20px;
-  box-shadow: 10px 10px 5px gray;
+  margin-top: 5%;
+  animation: animate 1s;
 }
-.country {
-  width: 100%;
+@keyframes animate {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+.Data {
+  width: 350px;
+  height: 350px;
+  background-color: #bac5d6;
+  border-radius: 10px;
+  box-shadow: -5px 10px 10px steelblue;
+}
 
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  font-weight: bold;
+.border {
+  width: 300px;
+  height: 1px;
+  border-bottom: 2px solid #29364a;
+  margin: 5% auto;
 }
-.Name {
-  width: 100%;
-  position: absolute;
-  top: 50px;
-  left: 10px;
-  font-weight: bold;
-}
+
 .Condition {
-  position: absolute;
-  top: 90px;
-  left: 10px;
-  font-weight: bold;
-}
-.imgContainer {
-  align-self: center;
-}
-
-.airCondition {
-  margin: 50px;
-  font-weight: normal;
-}
-.tempratureConatiner {
-  position: absolute;
-  top: 50%;
-}
-.temprature_C {
-  margin: 30px;
-}
-.temprature_F {
-  margin: 30px;
-}
-.countryName {
-  font-weight: normal;
-  margin-left: 27%;
-}
-.cityName {
-  font-weight: normal;
-  margin-left: 30%;
-}
-.errorContainer {
-  display: none;
-  justify-content: center;
-  max-width: 80%;
-  background-color: #dfede9;
-  align-items: center;
-  height: 60vh;
-  margin-top: 100px;
-  position: relative;
-  border-radius: 20px;
-  box-shadow: 10px 10px 5px gray;
-}
-.resFromErr {
-  font-style: italic;
-}
-
-.footer {
   width: 100%;
-  height: 130px;
-  background-color: #8db096;
-  position: absolute;
-  top:100%;
-  margin-top: 30px;
-}
-
-.devsName {
   display: flex;
+  font-size:1.3rem;
+  align-items: center;
   flex-direction: column;
-  width: 100%;
-  align-items: center;
-}
-.devsInfo,
-.myName {
-  font-style: italic;
-  font-weight: bold;
 }
 
-.a {
-  width: 30px;
-  height: 30px;
-}
-
-.tempInfo {
+.country {
   display: flex;
-  font-style: italic;
-  margin-top: 200px;
-  margin-left: 50px;
-}
-.loading{
- display:flex;
- justify-content:center;
- max-width:65%;
- margin-top:150px;
+  width: 100%;
+  font-size:1.2rem;
+  justify-content: center;
+  margin-top: 15px;
 }
 
-/*loading part */
+.tempratureConatiner {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  font-size:1.3rem;
+  justify-content: center;
+  align-items:center;
+}
+
+.insideFooter {
+  width: 100%;
+  margin-top: 3%;
+  animation: developerName 1s;
+}
+.developerName {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.name {
+font-style: italic;
+}
+@keyframes developerName{
+  from{
+    transform:translateX(0);
+  }
+  to{
+    transform:translateX(50%)
+  }
+}
+
+.fab{
+  width:50px;
+  height:50px;
+  margin:5px;
+}
+
+
+@media (max-width:700px){
+  .insideFooter{
+    margin-top:20%;
+  }
+}
+
+
+.loading{
+ display:none;
+ width:100%;
+ height:100%;
+ position:fixed;
+ top:40%;
+}
 
 .loader {
   border: 16px solid #f3f3f3;
   border-radius: 50%;
-  border-top: 16px solid #3498db;
+  border-top: 16px solid blue;
+  border-bottom: 16px solid blue;
+  margin: 0 auto;
   width: 120px;
   height: 120px;
-  -webkit-animation: spin 2s linear infinite; /* Safari */
+  -webkit-animation: spin 2s linear infinite;
   animation: spin 2s linear infinite;
 }
 
-/* Safari */
 @-webkit-keyframes spin {
   0% { -webkit-transform: rotate(0deg); }
   100% { -webkit-transform: rotate(360deg); }
@@ -147,24 +157,4 @@ body{
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
-}
-
-
-
-
-
-
-@media screen and (max-width: 600px) {
-  .innerConatiner {
-    margin-left: 50px;
-  }
- 
-}
-@media screen and (max-width:416px){
-  #btnSeach{
-    margin-top:5px;
-  }
-   .tempInfo{
-    margin:top:115px;
-  }
 }
