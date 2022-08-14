@@ -5,15 +5,19 @@
   font-family: playfair, roboto, sans-serif;
 }
 .navbar{
-  background-color:#7d672a !important;
+  background-image: url('backgroundImgForWeather2.jpg')!important;
 }
 body{
-  background-color:#ba8e14;
+  background-image: url('backgroundImgForWeather2.jpg');
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 #navbar-brand {
   width: 100%;
   text-align: center;
   color:#fff;
+  text-transform: uppercase;
+  font-size: 1.4rem;
 }
 .inputControl {
   width: 100%;
@@ -21,6 +25,9 @@ body{
   justify-content: center;
   margin-top: 3%;
   animation:inputAnimation 1s;
+}
+#searchBox{
+  padding-left: 10px;
 }
 #searchBox:focus{
   outline: none;
@@ -35,6 +42,13 @@ body{
 }
 #btnSearch {
   width: 50px;
+  border: none;
+  background-color: #00a6ff;
+  color: #fff;
+  border-radius: 5px;
+}
+#btnSearch:active{
+  outline: none;
 }
 .innerConatiner {
   width: 100%;
@@ -56,9 +70,9 @@ body{
 .Data {
   width: 350px;
   height: 350px;
-  background-color: #bac5d6;
+  color: #fff;
   border-radius: 10px;
-  box-shadow: -5px 10px 10px steelblue;
+  box-shadow: 0px 0px 0px black;
 }
 
 .border {
@@ -97,6 +111,7 @@ body{
   width: 100%;
   margin-top: 3%;
   animation: developerName 1s;
+  color: #fff;
 }
 .developerName {
   font-weight: bold;
