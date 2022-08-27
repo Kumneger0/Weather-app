@@ -5,10 +5,10 @@
   font-family: playfair, roboto, sans-serif;
 }
 .navbar{
-  background-image: url('backgroundImgForWeather2.jpg')!important;
+  background-image: url('backgroundImg.jpg')!important;
 }
 body{
-  background-image: url('backgroundImgForWeather.jpg');
+  background-image: url('backgroundImg.jpg');
   background-size:cover;
   background-repeat: no-repeat;
 }
